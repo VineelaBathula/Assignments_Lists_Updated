@@ -14,6 +14,7 @@ def show_main_menu():
       break
     elif user_menu_choice in 'Xx': 
       print('This option prints the list of items ordered, extended price, total, Taxes, and Grand total ')
+      close_order(user_menu_choice)
     elif user_menu_choice in 'Cc':
       print('Change Order')
     elif user_menu_choice in 'Nn': 
