@@ -17,6 +17,7 @@ def show_main_menu():
       close_order(user_menu_choice)
     elif user_menu_choice in 'Cc':
       print('Change Order')
+      functions.change_order(user_menu_choice)
     elif user_menu_choice in 'Nn': 
       print('New order')
       make_order(user_menu_choice.upper())  #calls a function for adding to the orders
@@ -30,8 +31,10 @@ def make_order(menu_choice):
     another_item = input("Do you want to add another item? (Y/N): ").upper()  # Ask if the user wants to add another item
     if another_item != 'Y':  # Break the loop if the user doesn't want to add more items
       break
-  
-  
+ 
+
+
+
 
 def close_order(menu_choice):
   """ Closes the order , prints the receipt and reset the current order"""

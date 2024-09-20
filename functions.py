@@ -37,10 +37,10 @@ def add_to_order(item_code, quantity):
     current_order.append((item_name, item_price, int(quantity)))
     print(f'Added {quantity} x {item_name} to your order.')
 
-def change_order():
+def change_order(User_choice):
     """Allow user to change an order by selecting an item to update or remove."""
     if not current_order:
-        print("No items in the order to change.")
+        print("No items in the order to change",User_choice)
         return
     
     print("Current order:")
