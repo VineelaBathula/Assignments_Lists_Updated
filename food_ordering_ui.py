@@ -3,8 +3,9 @@ import data
 import functions
 def show_main_menu():
   while True:
+    print("**************")
     print("Vineela's diner") #edit to show your name
-    print("__________")
+    print("**************")
     print('N for a new order')
     print('C to change an existing order')
     print('X for close orders and print the check')
